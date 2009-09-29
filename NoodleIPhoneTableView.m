@@ -109,7 +109,7 @@
 		[textShadow setShadowBlurRadius:0.0];
 		
 		attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-													 [NSFont fontWithName:@"Helvetica" size:16.0],
+													 [NSFont fontWithName:@"Helvetica-Bold" size:16.0],
 													 NSFontAttributeName,
 													 textShadow,
 													 NSShadowAttributeName,
