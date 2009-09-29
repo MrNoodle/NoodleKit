@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322DEBAE1072594300CB7080 /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		322DEBAF1072594D00CB7080 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		322DEBB31072595B00CB7080 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DEBB11072595B00CB7080 /* Controller.m */; };
+		322DEBB41072595B00CB7080 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DEBB21072595B00CB7080 /* main.m */; };
+		322DEBB81072598E00CB7080 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322DEBB61072598E00CB7080 /* MainMenu.xib */; };
+		322DECB310727B3C00CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		322DECC610727B9300CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */; };
+		32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB010713A4C0041F09C /* NoodleLineNumberView.m */; };
+		32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FB410713B640041F09C /* NoodleLineNumberMarker.h */; };
+		32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB510713B640041F09C /* NoodleLineNumberMarker.m */; };
+		32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */; };
+		32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */; };
+		32782FDE10713DA00041F09C /* NoodleIPhoneTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */; };
+		32782FDF10713DA00041F09C /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */; };
+		32782FE010713DA00041F09C /* NoodleStickyRowTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */; };
+		32782FE110713DA00041F09C /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */; };
+		32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */; };
+		32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */; };
+		32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */; };
+		32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FE510713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m */; };
+		3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 32783038107140600041F09C /* NSWindow-NoodleEffects.h */; };
+		3278303B107140600041F09C /* NSWindow-NoodleEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 32783039107140600041F09C /* NSWindow-NoodleEffects.m */; };
+		32783093107152680041F09C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32783091107152680041F09C /* MainMenu.xib */; };
+		32783097107152A90041F09C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 32783096107152A90041F09C /* Controller.m */; };
+		32783099107152E30041F09C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32783098107152E30041F09C /* main.m */; };
+		327830AB107153500041F09C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		327830F3107155D70041F09C /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		3278311A107156CB0041F09C /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		32783133107159280041F09C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 32783132107159280041F09C /* Credits.rtf */; };
+		3278315510715AC90041F09C /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		3278315910715AEA0041F09C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3278315810715AEA0041F09C /* Controller.m */; };
+		3278315C10715AF60041F09C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3278315A10715AF60041F09C /* MainMenu.xib */; };
+		3278315E10715AFC0041F09C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3278315D10715AFC0041F09C /* main.m */; };
+		3278316210715B210041F09C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3278316110715B210041F09C /* Credits.rtf */; };
+		3278316410715B440041F09C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		3278316810715B680041F09C /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		327831AE107160460041F09C /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		327831B0107160510041F09C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		327831B7107160690041F09C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 327831B4107160690041F09C /* Controller.m */; };
+		327831B8107160690041F09C /* MarkerLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327831B6107160690041F09C /* MarkerLineNumberView.m */; };
+		327831BB1071607D0041F09C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327831BA1071607D0041F09C /* main.m */; };
+		327831BE1071608F0041F09C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327831BC1071608F0041F09C /* MainMenu.xib */; };
+		327831DD107161EB0041F09C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 327831DC107161EB0041F09C /* Credits.rtf */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		322DEBAC1072594000CB7080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		3278318710715CEB0041F09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		3278318910715CF30041F09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		327831AC107160410041F09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		322DECB910727B4C00CB7080 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				322DECB310727B3C00CB7080 /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322DECC910727BA700CB7080 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				322DECC610727B9300CB7080 /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327831031071564E0041F09C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3278311A107156CB0041F09C /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3278316610715B5F0041F09C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3278316810715B680041F09C /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		322DEBA61072593A00CB7080 /* Window Effects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window Effects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		322DEBA81072593A00CB7080 /* Window Effects-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Window Effects-Info.plist"; path = "Window Effects/Window Effects-Info.plist"; sourceTree = "<group>"; };
+		322DEBB01072595B00CB7080 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = "Window Effects/Controller.h"; sourceTree = "<group>"; };
+		322DEBB11072595B00CB7080 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = "Window Effects/Controller.m"; sourceTree = "<group>"; };
+		322DEBB21072595B00CB7080 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Window Effects/main.m"; sourceTree = "<group>"; };
+		322DEBB71072598E00CB7080 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Examples/Window Effects/English.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		32782FB010713A4C0041F09C /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		32782FB410713B640041F09C /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		32782FB510713B640041F09C /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSResponder-NoodleModalExtensions.h"; sourceTree = "<group>"; };
+		32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSResponder-NoodleModalExtensions.m"; sourceTree = "<group>"; };
+		32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleIPhoneTableView.h; sourceTree = "<group>"; };
+		32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleIPhoneTableView.m; sourceTree = "<group>"; };
+		32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleStickyRowTableView.h; sourceTree = "<group>"; };
+		32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleStickyRowTableView.m; sourceTree = "<group>"; };
+		32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-NoodleExtensions.h"; sourceTree = "<group>"; };
+		32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NoodleExtensions.m"; sourceTree = "<group>"; };
+		32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-NoodlePerformWhenIdle.h"; sourceTree = "<group>"; };
+		32782FE510713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-NoodlePerformWhenIdle.m"; sourceTree = "<group>"; };
+		32783038107140600041F09C /* NSWindow-NoodleEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow-NoodleEffects.h"; sourceTree = "<group>"; };
+		32783039107140600041F09C /* NSWindow-NoodleEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow-NoodleEffects.m"; sourceTree = "<group>"; };
+		32783085107151B60041F09C /* ModalResponderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalResponderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32783087107151B60041F09C /* ModalResponder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalResponder-Info.plist"; sourceTree = "<group>"; };
+		32783092107152680041F09C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = ModalResponder/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		32783095107152A90041F09C /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		32783096107152A90041F09C /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		32783098107152E30041F09C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32783132107159280041F09C /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		3278314F10715AB80041F09C /* StickyRowTableView Revue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StickyRowTableView Revue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3278315710715AEA0041F09C /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		3278315810715AEA0041F09C /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		3278315B10715AF60041F09C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3278315D10715AFC0041F09C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3278315F10715B050041F09C /* StickyRowTableView Revue-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StickyRowTableView Revue-Info.plist"; sourceTree = "<group>"; };
+		3278316110715B210041F09C /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		327831A6107160380041F09C /* LineNumberView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineNumberView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327831A8107160380041F09C /* LineNumberView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LineNumberView-Info.plist"; sourceTree = "<group>"; };
+		327831B3107160690041F09C /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		327831B4107160690041F09C /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		327831B5107160690041F09C /* MarkerLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerLineNumberView.h; sourceTree = "<group>"; };
+		327831B6107160690041F09C /* MarkerLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerLineNumberView.m; sourceTree = "<group>"; };
+		327831BA1071607D0041F09C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327831BD1071608F0041F09C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Examples/LineNumberView/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		327831DC107161EB0041F09C /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* NoodleKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleKit_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* NoodleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoodleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		322DEBA41072593A00CB7080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322DEBAF1072594D00CB7080 /* Cocoa.framework in Frameworks */,
+				322DEBAE1072594300CB7080 /* NoodleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32783083107151B60041F09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327830F3107155D70041F09C /* NoodleKit.framework in Frameworks */,
+				327830AB107153500041F09C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3278314D10715AB80041F09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3278316410715B440041F09C /* Cocoa.framework in Frameworks */,
+				3278315510715AC90041F09C /* NoodleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327831A4107160380041F09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327831B0107160510041F09C /* Cocoa.framework in Frameworks */,
+				327831AE107160460041F09C /* NoodleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* NoodleKit.framework */,
+				32783085107151B60041F09C /* ModalResponderTest.app */,
+				3278314F10715AB80041F09C /* StickyRowTableView Revue.app */,
+				327831A6107160380041F09C /* LineNumberView.app */,
+				322DEBA61072593A00CB7080 /* Window Effects.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* NoodleKit */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				3278307F1071513F0041F09C /* Examples */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = NoodleKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */,
+				32782FE510713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m */,
+				32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */,
+				32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */,
+				32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */,
+				32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */,
+				32783038107140600041F09C /* NSWindow-NoodleEffects.h */,
+				32783039107140600041F09C /* NSWindow-NoodleEffects.m */,
+				32782FB410713B640041F09C /* NoodleLineNumberMarker.h */,
+				32782FB510713B640041F09C /* NoodleLineNumberMarker.m */,
+				32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */,
+				32782FB010713A4C0041F09C /* NoodleLineNumberView.m */,
+				32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */,
+				32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */,
+				32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */,
+				32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		322DEB9E1072591900CB7080 /* Window Effects */ = {
+			isa = PBXGroup;
+			children = (
+				322DEBB01072595B00CB7080 /* Controller.h */,
+				322DEBB11072595B00CB7080 /* Controller.m */,
+				322DEBB21072595B00CB7080 /* main.m */,
+				322DEBA81072593A00CB7080 /* Window Effects-Info.plist */,
+				322DEBB61072598E00CB7080 /* MainMenu.xib */,
+			);
+			name = "Window Effects";
+			sourceTree = "<group>";
+		};
+		3278307F1071513F0041F09C /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				327831A110715FC90041F09C /* LineNumberView */,
+				327830941071527D0041F09C /* ModalResponder */,
+				3278314A10715A970041F09C /* StickyRowTableView Revue */,
+				322DEB9E1072591900CB7080 /* Window Effects */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		327830941071527D0041F09C /* ModalResponder */ = {
+			isa = PBXGroup;
+			children = (
+				32783095107152A90041F09C /* Controller.h */,
+				32783096107152A90041F09C /* Controller.m */,
+				32783098107152E30041F09C /* main.m */,
+				32783087107151B60041F09C /* ModalResponder-Info.plist */,
+				32783132107159280041F09C /* Credits.rtf */,
+				32783091107152680041F09C /* MainMenu.xib */,
+			);
+			path = ModalResponder;
+			sourceTree = "<group>";
+		};
+		3278314A10715A970041F09C /* StickyRowTableView Revue */ = {
+			isa = PBXGroup;
+			children = (
+				3278315710715AEA0041F09C /* Controller.h */,
+				3278315810715AEA0041F09C /* Controller.m */,
+				3278315D10715AFC0041F09C /* main.m */,
+				3278315F10715B050041F09C /* StickyRowTableView Revue-Info.plist */,
+				3278316110715B210041F09C /* Credits.rtf */,
+				3278315A10715AF60041F09C /* MainMenu.xib */,
+			);
+			path = "StickyRowTableView Revue";
+			sourceTree = "<group>";
+		};
+		327831A110715FC90041F09C /* LineNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				327831B3107160690041F09C /* Controller.h */,
+				327831B4107160690041F09C /* Controller.m */,
+				327831B5107160690041F09C /* MarkerLineNumberView.h */,
+				327831B6107160690041F09C /* MarkerLineNumberView.m */,
+				327831BA1071607D0041F09C /* main.m */,
+				327831A8107160380041F09C /* LineNumberView-Info.plist */,
+				327831DC107161EB0041F09C /* Credits.rtf */,
+				327831BC1071608F0041F09C /* MainMenu.xib */,
+			);
+			path = LineNumberView;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* NoodleKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */,
+				32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */,
+				32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */,
+				32782FDE10713DA00041F09C /* NoodleIPhoneTableView.h in Headers */,
+				32782FE010713DA00041F09C /* NoodleStickyRowTableView.h in Headers */,
+				32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */,
+				32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */,
+				3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		322DEBA51072593A00CB7080 /* Window Effects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322DEBAB1072593B00CB7080 /* Build configuration list for PBXNativeTarget "Window Effects" */;
+			buildPhases = (
+				322DEBA21072593A00CB7080 /* Resources */,
+				322DEBA31072593A00CB7080 /* Sources */,
+				322DEBA41072593A00CB7080 /* Frameworks */,
+				322DECC910727BA700CB7080 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322DEBAD1072594000CB7080 /* PBXTargetDependency */,
+			);
+			name = "Window Effects";
+			productName = "Window Effects";
+			productReference = 322DEBA61072593A00CB7080 /* Window Effects.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32783084107151B60041F09C /* ModalResponder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3278308A107151B70041F09C /* Build configuration list for PBXNativeTarget "ModalResponder" */;
+			buildPhases = (
+				32783081107151B60041F09C /* Resources */,
+				32783082107151B60041F09C /* Sources */,
+				32783083107151B60041F09C /* Frameworks */,
+				327831031071564E0041F09C /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3278318810715CEB0041F09C /* PBXTargetDependency */,
+			);
+			name = ModalResponder;
+			productName = ModalResponderTest;
+			productReference = 32783085107151B60041F09C /* ModalResponderTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3278314E10715AB80041F09C /* StickyRowTableView Revue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3278315410715AB90041F09C /* Build configuration list for PBXNativeTarget "StickyRowTableView Revue" */;
+			buildPhases = (
+				3278314B10715AB80041F09C /* Resources */,
+				3278314C10715AB80041F09C /* Sources */,
+				3278314D10715AB80041F09C /* Frameworks */,
+				3278316610715B5F0041F09C /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3278318A10715CF30041F09C /* PBXTargetDependency */,
+			);
+			name = "StickyRowTableView Revue";
+			productName = "StickyRowTableView Revue";
+			productReference = 3278314F10715AB80041F09C /* StickyRowTableView Revue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327831A5107160380041F09C /* LineNumberView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327831AB107160390041F09C /* Build configuration list for PBXNativeTarget "LineNumberView" */;
+			buildPhases = (
+				327831A2107160380041F09C /* Resources */,
+				327831A3107160380041F09C /* Sources */,
+				327831A4107160380041F09C /* Frameworks */,
+				322DECB910727B4C00CB7080 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327831AD107160410041F09C /* PBXTargetDependency */,
+			);
+			name = LineNumberView;
+			productName = "Line View";
+			productReference = 327831A6107160380041F09C /* LineNumberView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DC2EF4F0486A6940098B216 /* NoodleKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "NoodleKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoodleKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = NoodleKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "NoodleKit" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* NoodleKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* NoodleKit */,
+				32783084107151B60041F09C /* ModalResponder */,
+				3278314E10715AB80041F09C /* StickyRowTableView Revue */,
+				327831A5107160380041F09C /* LineNumberView */,
+				322DEBA51072593A00CB7080 /* Window Effects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		322DEBA21072593A00CB7080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322DEBB81072598E00CB7080 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32783081107151B60041F09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32783133107159280041F09C /* Credits.rtf in Resources */,
+				32783093107152680041F09C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3278314B10715AB80041F09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3278315C10715AF60041F09C /* MainMenu.xib in Resources */,
+				3278316210715B210041F09C /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327831A2107160380041F09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327831BE1071608F0041F09C /* MainMenu.xib in Resources */,
+				327831DD107161EB0041F09C /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		322DEBA31072593A00CB7080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322DEBB31072595B00CB7080 /* Controller.m in Sources */,
+				322DEBB41072595B00CB7080 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32783082107151B60041F09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32783097107152A90041F09C /* Controller.m in Sources */,
+				32783099107152E30041F09C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3278314C10715AB80041F09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3278315910715AEA0041F09C /* Controller.m in Sources */,
+				3278315E10715AFC0041F09C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327831A3107160380041F09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327831B7107160690041F09C /* Controller.m in Sources */,
+				327831B8107160690041F09C /* MarkerLineNumberView.m in Sources */,
+				327831BB1071607D0041F09C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */,
+				32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */,
+				32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */,
+				32782FDF10713DA00041F09C /* NoodleIPhoneTableView.m in Sources */,
+				32782FE110713DA00041F09C /* NoodleStickyRowTableView.m in Sources */,
+				32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */,
+				32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */,
+				3278303B107140600041F09C /* NSWindow-NoodleEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		322DEBAD1072594000CB7080 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 322DEBAC1072594000CB7080 /* PBXContainerItemProxy */;
+		};
+		3278318810715CEB0041F09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 3278318710715CEB0041F09C /* PBXContainerItemProxy */;
+		};
+		3278318A10715CF30041F09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 3278318910715CF30041F09C /* PBXContainerItemProxy */;
+		};
+		327831AD107160410041F09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 327831AC107160410041F09C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		322DEBB61072598E00CB7080 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322DEBB71072598E00CB7080 /* English */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		32783091107152680041F09C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32783092107152680041F09C /* MainMenu.xib */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3278315A10715AF60041F09C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3278315B10715AF60041F09C /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		327831BC1071608F0041F09C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327831BD1071608F0041F09C /* MainMenu.xib */,
+			);
+			name = MainMenu.xib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = NoodleKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = NoodleKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/ @loader_path/Frameworks/";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=i386]" = (
+					"$(inherited)",
+					"-fsingle-precision-constant",
+				);
+				"OTHER_CFLAGS[arch=ppc]" = (
+					"$(inherited)",
+					"-fsingle-precision-constant",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				"OTHER_CFLAGS[arch=i386]" = (
+					"$(inherited)",
+					"-fsingle-precision-constant",
+				);
+				"OTHER_CFLAGS[arch=ppc]" = (
+					"$(inherited)",
+					"-fsingle-precision-constant",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		322DEBA91072593A00CB7080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/Window Effects/Window Effects-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Window Effects";
+			};
+			name = Debug;
+		};
+		322DEBAA1072593A00CB7080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/Window Effects/Window Effects-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Window Effects";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		32783088107151B70041F09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/ModalResponder/ModalResponder-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ModalResponderTest;
+			};
+			name = Debug;
+		};
+		32783089107151B70041F09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/ModalResponder/ModalResponder-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ModalResponderTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		3278315210715AB90041F09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/StickyRowTableView Revue/StickyRowTableView Revue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "StickyRowTableView Revue";
+			};
+			name = Debug;
+		};
+		3278315310715AB90041F09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/StickyRowTableView Revue/StickyRowTableView Revue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "StickyRowTableView Revue";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		327831A9107160380041F09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/LineNumberView/LineNumberView-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LineNumberView;
+			};
+			name = Debug;
+		};
+		327831AA107160380041F09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/LineNumberView/LineNumberView-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LineNumberView;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "NoodleKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "NoodleKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322DEBAB1072593B00CB7080 /* Build configuration list for PBXNativeTarget "Window Effects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322DEBA91072593A00CB7080 /* Debug */,
+				322DEBAA1072593A00CB7080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3278308A107151B70041F09C /* Build configuration list for PBXNativeTarget "ModalResponder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32783088107151B70041F09C /* Debug */,
+				32783089107151B70041F09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3278315410715AB90041F09C /* Build configuration list for PBXNativeTarget "StickyRowTableView Revue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3278315210715AB90041F09C /* Debug */,
+				3278315310715AB90041F09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327831AB107160390041F09C /* Build configuration list for PBXNativeTarget "LineNumberView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327831A9107160380041F09C /* Debug */,
+				327831AA107160380041F09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,110 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf110
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww19360\viewh17460\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+
+\f0\b\fs24 \cf0 NoodleStickyRowTableView Test
+\b0 \
+version 0.18369\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+This is a sample project and test harness for NoodleStickyRowTableView.\
+\
+NoodleStickyRowTableView is an NSTableView subclass where group rows (this can be overridden) will "stick" to the top of the view when they scroll off. This is like how section headers will stick to the top in UITableViews on the iPhone.\
+\
+Almost all of it is accomplished via an NSTableView category. The reason it was done this way was so that (a) you could integrate it into your own NSTableView subclass easily and (b) you could gain the functionality in NSOutlineView and its subclasses as well. To get the basic functionality, all you need to do is subclass 
+\f1 -drawRect:
+\f0  and call 
+\f1 -drawStickyRowHeader
+\f0  after your call to 
+\f1 super
+\f0 . Look at the very minimal NoodleStickyRowTableView class for details.\
+\
+This project also includes NoodleIPhoneTableView which overrides a bit more to simulate the look and feel of UITableView.\
+\
+A blog post on this can be found at: {\field{\*\fldinst{HYPERLINK "http://www.noodlesoft.com/blog/2009/09/25/sticky-section-headers-in-nstableview"}}{\fldrslt http://www.noodlesoft.com/blog/2009/09/25/sticky-section-headers-in-nstableview}}\
+\
+Notes:\
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}As noted in the article linked above, limitations in being able to get a visual cache of a group row forced me to compromise and use a custom look for the sticky rows in the default implementation. As shown in the NoodleIPhoneTableView class, you can override all the drawing but it requires a bit more work.\
+{\listtext	\'95	}The sticky row header is implemented using an NSButton. The row is drawn into an image that is set on the button. The button is adjusted as needed, including whether it is enabled and therefore able to accept mouse clicks.\
+{\listtext	\'95	}To keep things in a category, the auxiliary button is put in the view hierarchy. It is tagged so that it can be retrieved later. This is further exploited where, for optimization purposes, the alternate image property of NSButton, which would otherwise go unused, is used as a cache.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\b \cf0 Possible Improvements\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\b0 \cf0 \
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}You can keep track of the last sticky row that was cached and reuse its image if it hasn't changed. I had actually implemented this but the performance gains were actually very minimal. For purposes of clarity, I took the code out but you can implement this if you need to eek out the last bit of performance.\
+{\listtext	\'95	}The fade-in transition is position based (it fades in as you scroll down). It might be better to make it time-based.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\b \cf0 Contact
+\b0 \
+\
+Just go {\field{\*\fldinst{HYPERLINK "http://www.noodlesoft.com/about.php"}}{\fldrslt www.noodlesoft.com}} and shoot me an email. Or visit the blog article linked above and leave a comment. Bugs, suggestions and other feedback appreciated.\
+\
+\
+
+\b License
+\b0 \
+\
+I am releasing this under the MIT license.\
+\
+____________________________________\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f1 \cf0 Copyright (c) 2009 Noodlesoft, LLC. All Rights Reserved.\
+\
+Permission is hereby granted, free of charge, to any person\
+obtaining a copy of this software and associated documentation\
+files (the "Software"), to deal in the Software without\
+restriction, including without limitation the rights to use,\
+copy, modify, merge, publish, distribute, sublicense, and/or sell\
+copies of the Software, and to permit persons to whom the\
+Software is furnished to do so, subject to the following\
+conditions:\
+\
+The above copyright notice and this permission notice shall be\
+included in all copies or substantial portions of the Software.\
+\
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\
+OTHER DEALINGS IN THE SOFTWARE.\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\ls3\ilvl0
+\f0\b \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+Changelog
+\b0 \
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+0.18369:\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\ls5\ilvl0\cf0 {\listtext	\'95	}Initial public release\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 \
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NoodleKit' target in the 'NoodleKit' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
