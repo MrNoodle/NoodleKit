@@ -27,6 +27,7 @@
 //
 
 #import "Controller.h"
+#import "NoodleTableView.h"
 
 @implementation Controller
 
@@ -65,6 +66,7 @@
 		}
 	}
 
+	[_stickyRowTableView setShowsStickyRowHeader:YES];
 	[_stickyRowTableView reloadData];
 	[_iPhoneTableView reloadData];
 }

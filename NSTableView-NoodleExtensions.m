@@ -1,33 +1,12 @@
 //
-//  NoodlyTableView.m
+//  NSTableView-NoodleExtensions.m
 //  NoodleKit
 //
-//  Created by Paul Kim on 8/21/09.
+//  Created by Paul Kim on 10/22/09.
 //  Copyright 2009 Noodlesoft, LLC. All rights reserved.
 //
-// Permission is hereby granted, free of charge, to any person
-// obtaining a copy of this software and associated documentation
-// files (the "Software"), to deal in the Software without
-// restriction, including without limitation the rights to use,
-// copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the
-// Software is furnished to do so, subject to the following
-// conditions:
-// 
-// The above copyright notice and this permission notice shall be
-// included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-// OTHER DEALINGS IN THE SOFTWARE.
-//
 
-#import "NoodleStickyRowTableView.h"
+#import "NSTableView-NoodleExtensions.h"
 #import "NSImage-NoodleExtensions.h"
 
 #define NOODLE_STICKY_ROW_VIEW_TAG		233931134
@@ -38,7 +17,9 @@ void NoodleClearRect(NSRect rect)
 	NSRectFill(rect);
 }
 
-@interface NSTableView (NoodlePrivateStickyRowExtensions)
+@interface NSTableView ()
+
+#pragma mark Sticky Row Header methods
 
 // Returns index of the sticky row previous to the first visible row.
 - (NSInteger)_previousStickyRow;
@@ -53,36 +34,15 @@ void NoodleClearRect(NSRect rect)
 
 @end
 
-@implementation NoodleStickyRowTableView
 
-// This is the minimum you have to do implement in your subclass.
-- (void)drawRect:(NSRect)rect
-{
-	[super drawRect:rect];
-	
-	[self drawStickyRowHeader];
-}
+@implementation NSTableView (NoodleExtensions)
 
-@end
-
-@implementation NoodleStickyRowOutlineView
-
-// This is the minimum you have to do implement in your subclass.
-- (void)drawRect:(NSRect)rect
-{
-	[super drawRect:rect];
-	
-	[self drawStickyRowHeader];
-}
-
-@end
-
-@implementation NSTableView (NoodleStickyRowExtensions)
+#pragma mark Sticky Row Header methods
 
 - (BOOL)isRowSticky:(NSInteger)rowIndex
 {
 	id		delegate;
-
+	
 	delegate = [self delegate];
 	
 	if ([delegate respondsToSelector:@selector(tableView:isStickyRow:)])
@@ -147,7 +107,7 @@ void NoodleClearRect(NSRect rect)
 		
 		[view setTarget:self];
 		[view setAction:@selector(scrollToStickyRow:)];
-	
+		
 		[self addSubview:view];
 		[view release];
 	}
@@ -159,24 +119,36 @@ void NoodleClearRect(NSRect rect)
 	NSRect				rowRect, cellRect;
 	NSCell				*cell;
 	NSInteger			colIndex, count;
+	id					delegate;
+	
+	delegate = [self delegate];
+	
+	if (![delegate respondsToSelector:@selector(tableView:shouldDisplayCellInStickyRowHeaderForTableColumn:row:)])
+	{
+		delegate = nil;
+	}
 	
 	rowRect = [self rectOfRow:row];
 	
 	[[[self backgroundColor] highlightWithLevel:0.5] set];
 	NSRectFill(rowRect);
 	
-// PENDING: -drawRow:clipRect: is too smart for its own good. If the row is not visible,
-//	this method won't draw anything. Useless for row caching.
-//	[self drawRow:row clipRect:rowRect];
-
+	// PENDING: -drawRow:clipRect: is too smart for its own good. If the row is not visible,
+	//	this method won't draw anything. Useless for row caching.
+	//	[self drawRow:row clipRect:rowRect];
+	
 	count = [self numberOfColumns];
 	for (colIndex = 0; colIndex < count; colIndex++)
 	{
-		cell = [self preparedCellAtColumn:colIndex row:row];
-		cellRect = [self frameOfCellAtColumn:colIndex row:row];
-		[cell drawWithFrame:cellRect inView:self];
+		if ((delegate == nil) ||
+			[delegate tableView:self shouldDisplayCellInStickyRowHeaderForTableColumn:[[self tableColumns] objectAtIndex:colIndex] row:row])
+		{
+			cell = [self preparedCellAtColumn:colIndex row:row];
+			cellRect = [self frameOfCellAtColumn:colIndex row:row];
+			[cell drawWithFrame:cellRect inView:self];
+		}
 	}
-
+	
 	[[self gridColor] set];
 	[NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(rowRect), NSMaxY(rowRect)) toPoint:NSMakePoint(NSMaxX(rowRect), NSMaxY(rowRect))];
 }
@@ -199,18 +171,18 @@ void NoodleClearRect(NSRect rect)
 	rowRect = [self rectOfRow:row];
 	imageRect = NSMakeRect(0.0, 0.0, NSWidth(rowRect), NSHeight(rowRect));
 	stickyView = [self _stickyRowHeaderView];
-
+	
 	isSelected = [self isRowSelected:row];
 	if (isSelected)
 	{
 		[self deselectRow:row];
 	}
-
+	
 	// Optimization: instead of creating a new image each time (and since we can't
 	// add ivars in a category), just use the image in the sticky view. We're going
 	// to put it there in the end anyways, why not reuse it?
 	image = [stickyView image];
-
+	
 	if ((image == nil) || !NSEqualSizes(rowRect.size, [image size]))
 	{
 		image = [[NSImage alloc] initWithSize:rowRect.size];
@@ -218,7 +190,7 @@ void NoodleClearRect(NSRect rect)
 		[stickyView setImage:image];
 		[image release];
 	}
-
+	
 	visibleRect = [self visibleRect];
 	
 	// Calculate a distance between the row header and the actual sticky row and normalize it 
@@ -383,10 +355,76 @@ void NoodleClearRect(NSRect rect)
 	return NSZeroRect;
 }
 
+#pragma mark Row Spanning methods
+
+- (NSRange)rangeOfRowSpanAtColumn:(NSInteger)columnIndex row:(NSInteger)rowIndex
+{
+	id				dataSource, objectValue, originalObjectValue;
+	NSInteger		i, start, end, count;
+	NSTableColumn	*column;
+	
+	dataSource = [self dataSource];
+	
+	column = [[self tableColumns] objectAtIndex:columnIndex];
+	
+	if ([column isRowSpanningEnabled])
+	{
+		originalObjectValue = [dataSource tableView:self objectValueForTableColumn:column row:rowIndex];
+		
+		// Figure out the span of this cell. We determine this by going up and down finding contiguous rows with
+		// the same object value.
+		i = rowIndex;
+		while (i-- > 0)
+		{
+			objectValue = [dataSource tableView:self objectValueForTableColumn:column row:i];
+			
+			if (![objectValue isEqual:originalObjectValue])
+			{
+				break;
+			}
+		}
+		start = i + 1;
+		
+		count = [self numberOfRows];
+		i = rowIndex + 1;
+		while (i < count)
+		{
+			objectValue = [dataSource tableView:self objectValueForTableColumn:column row:i];
+			
+			if (![objectValue isEqual:originalObjectValue])
+			{
+				break;
+			}
+			i++;
+		}
+		end = i - 1;
+		
+		return NSMakeRange(start, end - start + 1);
+	}
+	return NSMakeRange(rowIndex, 1);
+}
+
 @end
 
+@implementation NSTableColumn (NoodleExtensions)
 
-@implementation NSOutlineView (NoodleStickyRowExtensions)
+#pragma mark Row Spanning methods
+
+- (BOOL)isRowSpanningEnabled
+{
+	return NO;
+}
+
+- (NoodleRowSpanningCell *)spanningCell
+{
+	return nil;
+}
+
+@end
+
+@implementation NSOutlineView (NoodleExtensions)
+
+#pragma mark Sticky Row Header methods
 
 - (BOOL)isRowSticky:(NSInteger)rowIndex
 {

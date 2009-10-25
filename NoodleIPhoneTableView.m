@@ -28,7 +28,7 @@
 //
 
 #import "NoodleIPhoneTableView.h"
-#import "NoodleStickyRowTableView.h"
+#import "NSTableView-NoodleExtensions.h"
 
 @implementation NoodleIPhoneTableView
 

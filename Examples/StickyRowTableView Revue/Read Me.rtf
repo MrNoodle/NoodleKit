@@ -15,9 +15,9 @@
 version 0.18369\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 \cf0 \
-This is a sample project and test harness for NoodleStickyRowTableView.\
+This is a sample project and test harness for the sticky row header feature of NoodleTableView.\
 \
-NoodleStickyRowTableView is an NSTableView subclass where group rows (this can be overridden) will "stick" to the top of the view when they scroll off. This is like how section headers will stick to the top in UITableViews on the iPhone.\
+NoodleTableView is an NSTableView subclass where group rows (this can be overridden) will "stick" to the top of the view when they scroll off. This is like how section headers will stick to the top in UITableViews on the iPhone.\
 \
 Almost all of it is accomplished via an NSTableView category. The reason it was done this way was so that (a) you could integrate it into your own NSTableView subclass easily and (b) you could gain the functionality in NSOutlineView and its subclasses as well. To get the basic functionality, all you need to do is subclass 
 \f1 -drawRect:
@@ -25,13 +25,16 @@ Almost all of it is accomplished via an NSTableView category. The reason it was 
 \f1 -drawStickyRowHeader
 \f0  after your call to 
 \f1 super
-\f0 . Look at the very minimal NoodleStickyRowTableView class for details.\
+\f0 . Look at the NoodleTableView class for details.\
 \
 This project also includes NoodleIPhoneTableView which overrides a bit more to simulate the look and feel of UITableView.\
 \
 A blog post on this can be found at: {\field{\*\fldinst{HYPERLINK "http://www.noodlesoft.com/blog/2009/09/25/sticky-section-headers-in-nstableview"}}{\fldrslt http://www.noodlesoft.com/blog/2009/09/25/sticky-section-headers-in-nstableview}}\
 \
-Notes:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\b \cf0 Notes
+\b0 \
 \
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
 \ls1\ilvl0\cf0 {\listtext	\'95	}As noted in the article linked above, limitations in being able to get a visual cache of a group row forced me to compromise and use a custom look for the sticky rows in the default implementation. As shown in the NoodleIPhoneTableView class, you can override all the drawing but it requires a bit more work.\

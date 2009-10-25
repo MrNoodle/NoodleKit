@@ -7,41 +7,46 @@ The project is primarily structured to build a framework. There are targets for 
 
 This framework is meant to be built/used on 10.5 and later and should support 64-bit.
 
-This code is maintained at <http://github.com/MrNoodle/NoodleKit>
+This code is maintained at <http://github.com/MrNoodle/NoodleKit> . Please post any issues and requests there.
 
 What nifty stuff is in here?
 ----------------------------
 
-#### NSObject-NoodlePerformWhenIdle
-NSObject category for calling a method when the user has been idle for the specified amount of time. Useful for putting up non-critical alerts and purging memory caches, among other things.
-
+#### NSObject-NoodlePerformWhenIdle  
+NSObject category for calling a method when the user has been idle for the specified amount of time. Useful for putting up non-critical alerts and purging memory caches, among other things.  
 <http://www.noodlesoft.com/blog/2008/01/08/idle-hands/>
 
-#### NSResponder-NoodleModalExtensions
-NSResponder category providing methods that will dismiss a dialog and return the proper code for whatever button (OK/Cancel) was clicked. Just hook your dialog buttons up to these methods in IB and you're set. Alleviates having to write that glue code every time.
+#### NSIndexSet-NoodleExtensions
+Provides an enumerator to cycle through the indexes in an NSIndexSet. Not featured directly in any blog article but used for the "Row Spanning Columns" feature (see below).
 
+#### NSResponder-NoodleModalExtensions  
+NSResponder category providing methods that will dismiss a dialog and return the proper code for whatever button (OK/Cancel) was clicked. Just hook your dialog buttons up to these methods in IB and you're set. Alleviates having to write that glue code every time.  
 <http://www.noodlesoft.com/blog/2008/03/10/modal-glue/>
 
-#### NSImage-NoodleExtensions
-NSImage category providing methods to draw NSImages with correct orientation and scaling regardless of the flipped status of the image or the context being drawn into.
-
+#### NSImage-NoodleExtensions  
+NSImage category providing methods to draw NSImages with correct orientation and scaling regardless of the flipped status of the image or the context being drawn into.  
 <http://www.noodlesoft.com/blog/2009/02/02/understanding-flipped-coordinate-systems/>
 
-#### NSWindow-NoodleEffects
-Provides a basic zoom effect for NSWindow.
-
-<http://www.noodlesoft.com/blog/2007/06/30/animation-in-the-time-of-tiger-part-1/>
+#### NSWindow-NoodleEffects  
+Provides a basic zoom effect for NSWindow.  
+<http://www.noodlesoft.com/blog/2007/06/30/animation-in-the-time-of-tiger-part-1/>  
 <http://www.noodlesoft.com/blog/2007/09/20/animation-in-the-time-of-tiger-part-3/>
 
-#### NoodleLineNumberView, NoodleLineNumberMarker:
-Adds line numbers (and markers) to NSTextView.
-
+#### NoodleLineNumberView, NoodleLineNumberMarker  
+Adds line numbers (and corresponding markers) to NSTextView.  
 <http://www.noodlesoft.com/blog/2008/10/05/displaying-line-numbers-with-nstextview/>
 
-#### NoodleStickyRowTableView, NoodleIPhoneTableView:
-An NSTableView category that does sticky row headers, like with UITableView on the iPhone. NoodleStickyRowTableView is a basic subclass while NoodleIPhoneTableView simulates the look and feel of UITableView.
+#### NSTableView-NoodleExtensions, NoodleTableView, NoodleIPhoneTableView
+The NSTableView category and NoodleTableView are a consolidation of the sticky row header tableview
+and row spanning tableview featured on my blog.
 
+#####Sticky Row Headers
+An NSTableView category that does sticky row headers, like with UITableView on the iPhone. NoodleTableView implements the basic hooks to enable the feature while NoodleIPhoneTableView simulates the look and feel of UITableView.
 <http://www.noodlesoft.com/blog/2009/09/25/sticky-section-headers-in-nstableview/>
+
+#####Row Spanning Columns
+Certain columns can be made to allow their cells to span across multiple rows. These spans are determined by contiguous sections of rows with the same object value. You can enable this in NoodleTableView by using NoodleTableColumns for any columns you want to exhibit this behavior. Remember to enable the property on each column or call -setRowSpanningEnabledForCapableColumns: to enable it for all NoodleTableColumns in the tableview.
+<http://www.noodlesoft.com/blog/2009/10/20/yet-another-way-to-mimic-the-artwork-column-in-cocoa/>
 
 
 License

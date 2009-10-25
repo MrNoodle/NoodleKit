@@ -14,16 +14,26 @@
 		322DEBB81072598E00CB7080 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322DEBB61072598E00CB7080 /* MainMenu.xib */; };
 		322DECB310727B3C00CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
 		322DECC610727B9300CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		3251D221108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D21F108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h */; };
+		3251D222108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D220108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m */; };
+		3251D225108F7FB9007E281D /* NoodleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D223108F7FB9007E281D /* NoodleTableView.h */; };
+		3251D226108F7FB9007E281D /* NoodleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D224108F7FB9007E281D /* NoodleTableView.m */; };
+		3251D235108F8017007E281D /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		3251D237108F8021007E281D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3251D236108F8021007E281D /* Cocoa.framework */; };
+		3251D241108F8119007E281D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251D23F108F8119007E281D /* MainMenu.xib */; };
+		3251D243108F8125007E281D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D242108F8125007E281D /* main.m */; };
+		3251D245108F8165007E281D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3251D244108F8165007E281D /* Credits.rtf */; };
+		3251D248108F817C007E281D /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D247108F817B007E281D /* Controller.m */; };
+		3251D48D1090FFB0007E281D /* NSTableView-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D48B1090FFB0007E281D /* NSTableView-NoodleExtensions.h */; };
+		3251D48E1090FFB0007E281D /* NSTableView-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D48C1090FFB0007E281D /* NSTableView-NoodleExtensions.m */; };
+		326A35051092486400AF02F8 /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */; };
+		326A35061092486800AF02F8 /* NoodleIPhoneTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */; };
 		32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */; };
 		32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB010713A4C0041F09C /* NoodleLineNumberView.m */; };
 		32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FB410713B640041F09C /* NoodleLineNumberMarker.h */; };
 		32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB510713B640041F09C /* NoodleLineNumberMarker.m */; };
 		32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */; };
 		32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */; };
-		32782FDE10713DA00041F09C /* NoodleIPhoneTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */; };
-		32782FDF10713DA00041F09C /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */; };
-		32782FE010713DA00041F09C /* NoodleStickyRowTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */; };
-		32782FE110713DA00041F09C /* NoodleStickyRowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */; };
 		32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */; };
 		32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */; };
 		32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */; };
@@ -57,6 +67,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		322DEBAC1072594000CB7080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		3251D238108F802F007E281D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -144,6 +161,20 @@
 		322DEBB11072595B00CB7080 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = "Window Effects/Controller.m"; sourceTree = "<group>"; };
 		322DEBB21072595B00CB7080 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Window Effects/main.m"; sourceTree = "<group>"; };
 		322DEBB71072598E00CB7080 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Examples/Window Effects/English.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		3251D21F108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet-NoodleExtensions.h"; sourceTree = "<group>"; };
+		3251D220108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet-NoodleExtensions.m"; sourceTree = "<group>"; };
+		3251D223108F7FB9007E281D /* NoodleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleTableView.h; sourceTree = "<group>"; };
+		3251D224108F7FB9007E281D /* NoodleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleTableView.m; sourceTree = "<group>"; };
+		3251D22F108F800C007E281D /* iToonz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iToonz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3251D231108F800C007E281D /* iToonz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iToonz-Info.plist"; sourceTree = "<group>"; };
+		3251D236108F8021007E281D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3251D240108F8119007E281D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3251D242108F8125007E281D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3251D244108F8165007E281D /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		3251D246108F817B007E281D /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		3251D247108F817B007E281D /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		3251D48B1090FFB0007E281D /* NSTableView-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableView-NoodleExtensions.h"; sourceTree = "<group>"; };
+		3251D48C1090FFB0007E281D /* NSTableView-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableView-NoodleExtensions.m"; sourceTree = "<group>"; };
 		32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
 		32782FB010713A4C0041F09C /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
 		32782FB410713B640041F09C /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
@@ -152,8 +183,6 @@
 		32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSResponder-NoodleModalExtensions.m"; sourceTree = "<group>"; };
 		32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleIPhoneTableView.h; sourceTree = "<group>"; };
 		32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleIPhoneTableView.m; sourceTree = "<group>"; };
-		32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleStickyRowTableView.h; sourceTree = "<group>"; };
-		32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleStickyRowTableView.m; sourceTree = "<group>"; };
 		32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage-NoodleExtensions.h"; sourceTree = "<group>"; };
 		32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage-NoodleExtensions.m"; sourceTree = "<group>"; };
 		32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-NoodlePerformWhenIdle.h"; sourceTree = "<group>"; };
@@ -196,6 +225,15 @@
 			files = (
 				322DEBAF1072594D00CB7080 /* Cocoa.framework in Frameworks */,
 				322DEBAE1072594300CB7080 /* NoodleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3251D22D108F800C007E281D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3251D235108F8017007E281D /* NoodleKit.framework in Frameworks */,
+				3251D237108F8021007E281D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +283,7 @@
 				3278314F10715AB80041F09C /* StickyRowTableView Revue.app */,
 				327831A6107160380041F09C /* LineNumberView.app */,
 				322DEBA61072593A00CB7080 /* Window Effects.app */,
+				3251D22F108F800C007E281D /* iToonz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +297,7 @@
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				3278307F1071513F0041F09C /* Examples */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				3251D236108F8021007E281D /* Cocoa.framework */,
 			);
 			name = NoodleKit;
 			sourceTree = "<group>";
@@ -285,6 +325,8 @@
 			children = (
 				32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */,
 				32782FE510713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m */,
+				3251D21F108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h */,
+				3251D220108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m */,
 				32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */,
 				32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */,
 				32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */,
@@ -295,10 +337,12 @@
 				32782FB510713B640041F09C /* NoodleLineNumberMarker.m */,
 				32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */,
 				32782FB010713A4C0041F09C /* NoodleLineNumberView.m */,
+				3251D48B1090FFB0007E281D /* NSTableView-NoodleExtensions.h */,
+				3251D48C1090FFB0007E281D /* NSTableView-NoodleExtensions.m */,
+				3251D223108F7FB9007E281D /* NoodleTableView.h */,
+				3251D224108F7FB9007E281D /* NoodleTableView.m */,
 				32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */,
 				32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */,
-				32782FDA10713DA00041F09C /* NoodleStickyRowTableView.h */,
-				32782FDB10713DA00041F09C /* NoodleStickyRowTableView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -333,9 +377,23 @@
 			name = "Window Effects";
 			sourceTree = "<group>";
 		};
+		3251D23E108F8063007E281D /* iToonz */ = {
+			isa = PBXGroup;
+			children = (
+				3251D242108F8125007E281D /* main.m */,
+				3251D231108F800C007E281D /* iToonz-Info.plist */,
+				3251D244108F8165007E281D /* Credits.rtf */,
+				3251D23F108F8119007E281D /* MainMenu.xib */,
+				3251D246108F817B007E281D /* Controller.h */,
+				3251D247108F817B007E281D /* Controller.m */,
+			);
+			path = iToonz;
+			sourceTree = "<group>";
+		};
 		3278307F1071513F0041F09C /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				3251D23E108F8063007E281D /* iToonz */,
 				327831A110715FC90041F09C /* LineNumberView */,
 				327830941071527D0041F09C /* ModalResponder */,
 				3278314A10715A970041F09C /* StickyRowTableView Revue */,
@@ -403,11 +461,13 @@
 				32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */,
 				32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */,
 				32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */,
-				32782FDE10713DA00041F09C /* NoodleIPhoneTableView.h in Headers */,
-				32782FE010713DA00041F09C /* NoodleStickyRowTableView.h in Headers */,
 				32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */,
 				32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */,
 				3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */,
+				3251D221108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h in Headers */,
+				3251D225108F7FB9007E281D /* NoodleTableView.h in Headers */,
+				3251D48D1090FFB0007E281D /* NSTableView-NoodleExtensions.h in Headers */,
+				326A35061092486800AF02F8 /* NoodleIPhoneTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +491,24 @@
 			name = "Window Effects";
 			productName = "Window Effects";
 			productReference = 322DEBA61072593A00CB7080 /* Window Effects.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3251D22E108F800C007E281D /* iToonz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3251D234108F800D007E281D /* Build configuration list for PBXNativeTarget "iToonz" */;
+			buildPhases = (
+				3251D22B108F800C007E281D /* Resources */,
+				3251D22C108F800C007E281D /* Sources */,
+				3251D22D108F800C007E281D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3251D239108F802F007E281D /* PBXTargetDependency */,
+			);
+			name = iToonz;
+			productName = iToonz;
+			productReference = 3251D22F108F800C007E281D /* iToonz.app */;
 			productType = "com.apple.product-type.application";
 		};
 		32783084107151B60041F09C /* ModalResponder */ = {
@@ -527,6 +605,7 @@
 				3278314E10715AB80041F09C /* StickyRowTableView Revue */,
 				327831A5107160380041F09C /* LineNumberView */,
 				322DEBA51072593A00CB7080 /* Window Effects */,
+				3251D22E108F800C007E281D /* iToonz */,
 			);
 		};
 /* End PBXProject section */
@@ -537,6 +616,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				322DEBB81072598E00CB7080 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3251D22B108F800C007E281D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3251D241108F8119007E281D /* MainMenu.xib in Resources */,
+				3251D245108F8165007E281D /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +675,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3251D22C108F800C007E281D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3251D243108F8125007E281D /* main.m in Sources */,
+				3251D248108F817C007E281D /* Controller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32783082107151B60041F09C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,11 +719,13 @@
 				32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */,
 				32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */,
 				32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */,
-				32782FDF10713DA00041F09C /* NoodleIPhoneTableView.m in Sources */,
-				32782FE110713DA00041F09C /* NoodleStickyRowTableView.m in Sources */,
 				32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */,
 				32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */,
 				3278303B107140600041F09C /* NSWindow-NoodleEffects.m in Sources */,
+				3251D222108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m in Sources */,
+				3251D226108F7FB9007E281D /* NoodleTableView.m in Sources */,
+				3251D48E1090FFB0007E281D /* NSTableView-NoodleExtensions.m in Sources */,
+				326A35051092486400AF02F8 /* NoodleIPhoneTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +736,11 @@
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
 			targetProxy = 322DEBAC1072594000CB7080 /* PBXContainerItemProxy */;
+		};
+		3251D239108F802F007E281D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 3251D238108F802F007E281D /* PBXContainerItemProxy */;
 		};
 		3278318810715CEB0041F09C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -671,6 +775,14 @@
 			);
 			name = MainMenu.xib;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3251D23F108F8119007E281D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3251D240108F8119007E281D /* English */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		32783091107152680041F09C /* MainMenu.xib */ = {
@@ -833,6 +945,54 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "Window Effects";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		3251D232108F800D007E281D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/iToonz/iToonz-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = iToonz;
+			};
+			name = Debug;
+		};
+		3251D233108F800D007E281D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/iToonz/iToonz-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = iToonz;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1007,6 +1167,15 @@
 			buildConfigurations = (
 				322DEBA91072593A00CB7080 /* Debug */,
 				322DEBAA1072593A00CB7080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3251D234108F800D007E281D /* Build configuration list for PBXNativeTarget "iToonz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3251D232108F800D007E281D /* Debug */,
+				3251D233108F800D007E281D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
