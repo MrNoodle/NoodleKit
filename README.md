@@ -5,7 +5,7 @@ This is a random collection of classes and categories that I am making public. M
 
 The project is primarily structured to build a framework. There are targets for various examples showing how the different classes are used. Some of the examples also contain a Read Me file so check those out for more details on the specific classes.
 
-This framework is meant to be built/used on 10.5 and later and should support 64-bit.
+This framework is meant to be built/used on 10.6 and later and should support 64-bit.
 
 This code is maintained at <http://github.com/MrNoodle/NoodleKit> . Please post any issues and requests there.
 
@@ -18,6 +18,14 @@ NSObject category for calling a method when the user has been idle for the speci
 
 #### NSIndexSet-NoodleExtensions
 Provides an enumerator to cycle through the indexes in an NSIndexSet. Not featured directly in any blog article but used for the "Row Spanning Columns" feature (see below).
+
+#### NSTimer-NoodleExtensions
+Allows you to create timers that treat the fire date as absolute. Normally, NSTimer will adjust the time if you put the machine to sleep. This category makes it such that it will fire on the date you told it to originally. 
+<http://www.noodlesoft.com/blog/2010/07/01/playing-with-nstimer/>
+
+#### NoodleGlue
+Little class that allows you to plug a block into some code that requires a target/selector. Check the NSTimer category too see how it can be used.
+<http://www.noodlesoft.com/blog/2010/07/01/playing-with-nstimer/>
 
 #### NSResponder-NoodleModalExtensions  
 NSResponder category providing methods that will dismiss a dialog and return the proper code for whatever button (OK/Cancel) was clicked. Just hook your dialog buttons up to these methods in IB and you're set. Alleviates having to write that glue code every time.  
@@ -52,7 +60,7 @@ Certain columns can be made to allow their cells to span across multiple rows. T
 License
 -------
 
-Copyright (c) 2007-2009 Noodlesoft, LLC. All Rights Reserved.
+Copyright (c) 2007-2010 Noodlesoft, LLC. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
