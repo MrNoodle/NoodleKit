@@ -14,31 +14,30 @@
 		322DEBB81072598E00CB7080 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322DEBB61072598E00CB7080 /* MainMenu.xib */; };
 		322DECB310727B3C00CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
 		322DECC610727B9300CB7080 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
-		3251D221108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D21F108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h */; };
+		3251D221108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D21F108F7FAE007E281D /* NSIndexSet-NoodleExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3251D222108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D220108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m */; };
-		3251D225108F7FB9007E281D /* NoodleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D223108F7FB9007E281D /* NoodleTableView.h */; };
+		3251D225108F7FB9007E281D /* NoodleTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D223108F7FB9007E281D /* NoodleTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3251D226108F7FB9007E281D /* NoodleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D224108F7FB9007E281D /* NoodleTableView.m */; };
 		3251D235108F8017007E281D /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
-		3251D237108F8021007E281D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3251D236108F8021007E281D /* Cocoa.framework */; };
 		3251D241108F8119007E281D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251D23F108F8119007E281D /* MainMenu.xib */; };
 		3251D243108F8125007E281D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D242108F8125007E281D /* main.m */; };
 		3251D245108F8165007E281D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3251D244108F8165007E281D /* Credits.rtf */; };
 		3251D248108F817C007E281D /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D247108F817B007E281D /* Controller.m */; };
-		3251D48D1090FFB0007E281D /* NSTableView-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D48B1090FFB0007E281D /* NSTableView-NoodleExtensions.h */; };
+		3251D48D1090FFB0007E281D /* NSTableView-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3251D48B1090FFB0007E281D /* NSTableView-NoodleExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3251D48E1090FFB0007E281D /* NSTableView-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3251D48C1090FFB0007E281D /* NSTableView-NoodleExtensions.m */; };
 		326A35051092486400AF02F8 /* NoodleIPhoneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD910713DA00041F09C /* NoodleIPhoneTableView.m */; };
-		326A35061092486800AF02F8 /* NoodleIPhoneTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */; };
-		32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */; };
+		326A35061092486800AF02F8 /* NoodleIPhoneTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD810713DA00041F09C /* NoodleIPhoneTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FAF10713A4C0041F09C /* NoodleLineNumberView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB010713A4C0041F09C /* NoodleLineNumberView.m */; };
-		32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FB410713B640041F09C /* NoodleLineNumberMarker.h */; };
+		32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FB410713B640041F09C /* NoodleLineNumberMarker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FB510713B640041F09C /* NoodleLineNumberMarker.m */; };
-		32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */; };
+		32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */; };
-		32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */; };
+		32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */; };
-		32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */; };
+		32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */ = {isa = PBXBuildFile; fileRef = 32782FE410713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 32782FE510713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m */; };
-		3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 32783038107140600041F09C /* NSWindow-NoodleEffects.h */; };
+		3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 32783038107140600041F09C /* NSWindow-NoodleEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3278303B107140600041F09C /* NSWindow-NoodleEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 32783039107140600041F09C /* NSWindow-NoodleEffects.m */; };
 		32783093107152680041F09C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32783091107152680041F09C /* MainMenu.xib */; };
 		32783097107152A90041F09C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 32783096107152A90041F09C /* Controller.m */; };
@@ -61,6 +60,17 @@
 		327831BB1071607D0041F09C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327831BA1071607D0041F09C /* main.m */; };
 		327831BE1071608F0041F09C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327831BC1071608F0041F09C /* MainMenu.xib */; };
 		327831DD107161EB0041F09C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 327831DC107161EB0041F09C /* Credits.rtf */; };
+		327CD73711DCF15200A88EA5 /* NSTimer-NoodleExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 327CD73311DCF15200A88EA5 /* NSTimer-NoodleExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		327CD73811DCF15200A88EA5 /* NSTimer-NoodleExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CD73411DCF15200A88EA5 /* NSTimer-NoodleExtensions.m */; };
+		327CD73911DCF15200A88EA5 /* NoodleGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = 327CD73511DCF15200A88EA5 /* NoodleGlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		327CD73A11DCF15200A88EA5 /* NoodleGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CD73611DCF15200A88EA5 /* NoodleGlue.m */; };
+		327CD77B11DCF77000A88EA5 /* TimerLabAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CD77A11DCF77000A88EA5 /* TimerLabAppDelegate.m */; };
+		327CD78211DCF7D400A88EA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CD78111DCF7D400A88EA5 /* main.m */; };
+		327CD78711DCF82100A88EA5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327CD78511DCF82100A88EA5 /* MainMenu.xib */; };
+		327CD7C711DCFA2F00A88EA5 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		327CD7D711DD17F500A88EA5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 327CD7D611DD17F500A88EA5 /* Credits.rtf */; };
+		327CD86011DD224E00A88EA5 /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		327CD86A11DD237000A88EA5 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -99,6 +109,13 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		327CD79111DCF8D500A88EA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
 			remoteInfo = NoodleKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -148,6 +165,28 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		327CD81011DD1E2700A88EA5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				327CD7C711DCFA2F00A88EA5 /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327CD87C11DD23C500A88EA5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				327CD86A11DD237000A88EA5 /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -167,7 +206,6 @@
 		3251D224108F7FB9007E281D /* NoodleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleTableView.m; sourceTree = "<group>"; };
 		3251D22F108F800C007E281D /* iToonz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iToonz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3251D231108F800C007E281D /* iToonz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iToonz-Info.plist"; sourceTree = "<group>"; };
-		3251D236108F8021007E281D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3251D240108F8119007E281D /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3251D242108F8125007E281D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3251D244108F8165007E281D /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -212,6 +250,17 @@
 		327831BA1071607D0041F09C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		327831BD1071608F0041F09C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Examples/LineNumberView/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		327831DC107161EB0041F09C /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		327CD73311DCF15200A88EA5 /* NSTimer-NoodleExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer-NoodleExtensions.h"; sourceTree = "<group>"; };
+		327CD73411DCF15200A88EA5 /* NSTimer-NoodleExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer-NoodleExtensions.m"; sourceTree = "<group>"; };
+		327CD73511DCF15200A88EA5 /* NoodleGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleGlue.h; sourceTree = "<group>"; };
+		327CD73611DCF15200A88EA5 /* NoodleGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleGlue.m; sourceTree = "<group>"; };
+		327CD76911DCF2EE00A88EA5 /* TimerLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327CD77911DCF77000A88EA5 /* TimerLabAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimerLabAppDelegate.h; path = TimerLab/TimerLabAppDelegate.h; sourceTree = "<group>"; };
+		327CD77A11DCF77000A88EA5 /* TimerLabAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimerLabAppDelegate.m; path = TimerLab/TimerLabAppDelegate.m; sourceTree = "<group>"; };
+		327CD78111DCF7D400A88EA5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TimerLab/main.m; sourceTree = "<group>"; };
+		327CD78311DCF7DE00A88EA5 /* TimerLab-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TimerLab-Info.plist"; path = "TimerLab/TimerLab-Info.plist"; sourceTree = "<group>"; };
+		327CD78611DCF82100A88EA5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = TimerLab/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		327CD7D611DD17F500A88EA5 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = TimerLab/Credits.rtf; sourceTree = "<group>"; };
 		32DBCF5E0370ADEE00C91783 /* NoodleKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleKit_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* NoodleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoodleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3251D235108F8017007E281D /* NoodleKit.framework in Frameworks */,
-				3251D237108F8021007E281D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +312,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		327CD76711DCF2EE00A88EA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327CD86011DD224E00A88EA5 /* NoodleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +340,7 @@
 				327831A6107160380041F09C /* LineNumberView.app */,
 				322DEBA61072593A00CB7080 /* Window Effects.app */,
 				3251D22F108F800C007E281D /* iToonz.app */,
+				327CD76911DCF2EE00A88EA5 /* TimerLab.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,7 +354,6 @@
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				3278307F1071513F0041F09C /* Examples */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				3251D236108F8021007E281D /* Cocoa.framework */,
 			);
 			name = NoodleKit;
 			sourceTree = "<group>";
@@ -329,6 +385,10 @@
 				3251D220108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m */,
 				32782FD410713C1E0041F09C /* NSResponder-NoodleModalExtensions.h */,
 				32782FD510713C1E0041F09C /* NSResponder-NoodleModalExtensions.m */,
+				327CD73311DCF15200A88EA5 /* NSTimer-NoodleExtensions.h */,
+				327CD73411DCF15200A88EA5 /* NSTimer-NoodleExtensions.m */,
+				327CD73511DCF15200A88EA5 /* NoodleGlue.h */,
+				327CD73611DCF15200A88EA5 /* NoodleGlue.m */,
 				32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */,
 				32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */,
 				32783038107140600041F09C /* NSWindow-NoodleEffects.h */,
@@ -393,6 +453,7 @@
 		3278307F1071513F0041F09C /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				327CD77811DCF74C00A88EA5 /* TimerLab */,
 				3251D23E108F8063007E281D /* iToonz */,
 				327831A110715FC90041F09C /* LineNumberView */,
 				327830941071527D0041F09C /* ModalResponder */,
@@ -443,6 +504,19 @@
 			path = LineNumberView;
 			sourceTree = "<group>";
 		};
+		327CD77811DCF74C00A88EA5 /* TimerLab */ = {
+			isa = PBXGroup;
+			children = (
+				327CD78111DCF7D400A88EA5 /* main.m */,
+				327CD7D611DD17F500A88EA5 /* Credits.rtf */,
+				327CD78311DCF7DE00A88EA5 /* TimerLab-Info.plist */,
+				327CD78511DCF82100A88EA5 /* MainMenu.xib */,
+				327CD77911DCF77000A88EA5 /* TimerLabAppDelegate.h */,
+				327CD77A11DCF77000A88EA5 /* TimerLabAppDelegate.m */,
+			);
+			name = TimerLab;
+			sourceTree = "<group>";
+		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +535,8 @@
 				32782FB110713A4C0041F09C /* NoodleLineNumberView.h in Headers */,
 				32782FB610713B640041F09C /* NoodleLineNumberMarker.h in Headers */,
 				32782FD610713C1E0041F09C /* NSResponder-NoodleModalExtensions.h in Headers */,
+				327CD73711DCF15200A88EA5 /* NSTimer-NoodleExtensions.h in Headers */,
+				327CD73911DCF15200A88EA5 /* NoodleGlue.h in Headers */,
 				32782FE210713DA00041F09C /* NSImage-NoodleExtensions.h in Headers */,
 				32782FE610713DD60041F09C /* NSObject-NoodlePerformWhenIdle.h in Headers */,
 				3278303A107140600041F09C /* NSWindow-NoodleEffects.h in Headers */,
@@ -500,6 +576,7 @@
 				3251D22B108F800C007E281D /* Resources */,
 				3251D22C108F800C007E281D /* Sources */,
 				3251D22D108F800C007E281D /* Frameworks */,
+				327CD87C11DD23C500A88EA5 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -568,6 +645,25 @@
 			productReference = 327831A6107160380041F09C /* LineNumberView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		327CD76811DCF2EE00A88EA5 /* TimerLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327CD76E11DCF2EF00A88EA5 /* Build configuration list for PBXNativeTarget "TimerLab" */;
+			buildPhases = (
+				327CD76511DCF2EE00A88EA5 /* Resources */,
+				327CD76611DCF2EE00A88EA5 /* Sources */,
+				327CD76711DCF2EE00A88EA5 /* Frameworks */,
+				327CD81011DD1E2700A88EA5 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327CD79211DCF8D500A88EA5 /* PBXTargetDependency */,
+			);
+			name = TimerLab;
+			productName = TimerLab;
+			productReference = 327CD76911DCF2EE00A88EA5 /* TimerLab.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8DC2EF4F0486A6940098B216 /* NoodleKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "NoodleKit" */;
@@ -606,6 +702,7 @@
 				327831A5107160380041F09C /* LineNumberView */,
 				322DEBA51072593A00CB7080 /* Window Effects */,
 				3251D22E108F800C007E281D /* iToonz */,
+				327CD76811DCF2EE00A88EA5 /* TimerLab */,
 			);
 		};
 /* End PBXProject section */
@@ -652,6 +749,15 @@
 			files = (
 				327831BE1071608F0041F09C /* MainMenu.xib in Resources */,
 				327831DD107161EB0041F09C /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327CD76511DCF2EE00A88EA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327CD78711DCF82100A88EA5 /* MainMenu.xib in Resources */,
+				327CD7D711DD17F500A88EA5 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,17 +818,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		327CD76611DCF2EE00A88EA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327CD77B11DCF77000A88EA5 /* TimerLabAppDelegate.m in Sources */,
+				327CD78211DCF7D400A88EA5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */,
-				32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */,
+				32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */,
 				32782FD710713C1E0041F09C /* NSResponder-NoodleModalExtensions.m in Sources */,
 				32782FE310713DA00041F09C /* NSImage-NoodleExtensions.m in Sources */,
-				32782FE710713DD60041F09C /* NSObject-NoodlePerformWhenIdle.m in Sources */,
+				327CD73811DCF15200A88EA5 /* NSTimer-NoodleExtensions.m in Sources */,
+				327CD73A11DCF15200A88EA5 /* NoodleGlue.m in Sources */,
 				3278303B107140600041F09C /* NSWindow-NoodleEffects.m in Sources */,
 				3251D222108F7FAE007E281D /* NSIndexSet-NoodleExtensions.m in Sources */,
+				32782FB210713A4C0041F09C /* NoodleLineNumberView.m in Sources */,
+				32782FB710713B640041F09C /* NoodleLineNumberMarker.m in Sources */,
 				3251D226108F7FB9007E281D /* NoodleTableView.m in Sources */,
 				3251D48E1090FFB0007E281D /* NSTableView-NoodleExtensions.m in Sources */,
 				326A35051092486400AF02F8 /* NoodleIPhoneTableView.m in Sources */,
@@ -756,6 +873,11 @@
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
 			targetProxy = 327831AC107160410041F09C /* PBXContainerItemProxy */;
+		};
+		327CD79211DCF8D500A88EA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = 327CD79111DCF8D500A88EA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -811,6 +933,14 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		327CD78511DCF82100A88EA5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327CD78611DCF82100A88EA5 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -829,7 +959,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = NoodleKit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -847,7 +977,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = NoodleKit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -874,7 +1004,7 @@
 					"-fsingle-precision-constant",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -897,7 +1027,7 @@
 					"-fsingle-precision-constant",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
@@ -1141,6 +1271,54 @@
 			};
 			name = Release;
 		};
+		327CD76C11DCF2EF00A88EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/TimerLab/TimerLab-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TimerLab;
+			};
+			name = Debug;
+		};
+		327CD76D11DCF2EF00A88EA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/TimerLab/TimerLab-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TimerLab;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1203,6 +1381,15 @@
 			buildConfigurations = (
 				327831A9107160380041F09C /* Debug */,
 				327831AA107160380041F09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327CD76E11DCF2EF00A88EA5 /* Build configuration list for PBXNativeTarget "TimerLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327CD76C11DCF2EF00A88EA5 /* Debug */,
+				327CD76D11DCF2EF00A88EA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
