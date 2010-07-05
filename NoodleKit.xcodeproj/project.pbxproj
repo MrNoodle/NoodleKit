@@ -959,7 +959,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = NoodleKit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -977,7 +977,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NoodleKit_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = NoodleKit;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -992,7 +992,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/ @loader_path/Frameworks/";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CFLAGS[arch=i386]" = (
@@ -1017,6 +1017,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				"OTHER_CFLAGS[arch=i386]" = (
 					"$(inherited)",

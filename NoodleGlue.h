@@ -48,6 +48,7 @@ typedef void		(^NoodleGlueCleanupBlock)(NoodleGlue *glue);
    observer, you need to retain it somewhere because the notification center won't (or if using GC, keep a strong
    reference somewhere).
  
+ For more details, check out the related blog post at http://www.noodlesoft.com/blog/2010/07/01/playing-with-nstimer/
  */
 @interface NoodleGlue : NSObject
 {
@@ -55,11 +56,14 @@ typedef void		(^NoodleGlueCleanupBlock)(NoodleGlue *glue);
 	NoodleGlueCleanupBlock	_cleanupBlock;
 }
 
+@property (readwrite, copy) NoodleGlueBlock glueBlock;
+@property (readwrite, copy) NoodleGlueCleanupBlock cleanupBlock;
+
 + (NoodleGlue *)glueWithBlock:(NoodleGlueBlock)glueBlock;
 + (NoodleGlue *)glueWithBlock:(NoodleGlueBlock)glueBlock cleanupBlock:(NoodleGlueCleanupBlock)cleanupBlock;
 
-// Initializes a glue object. glueBlock will be invoked when this object's -fire: method is called with the argument
-// to -fire: passed on as a parameter. cleanupBlock is invoked when this object is dealloc'ed/finalized with the 
+// Initializes a glue object. glueBlock will be invoked when this object's -invoke: method is called with the argument
+// to -invoke: passed on as a parameter. cleanupBlock is invoked when this object is dealloc'ed/finalized with the 
 // glue object being dealloc'ed sent in as a parameter.
 - (id)initWithBlock:(NoodleGlueBlock)glueBlock cleanupBlock:(NoodleGlueCleanupBlock)cleanupBlock;
 
@@ -67,5 +71,27 @@ typedef void		(^NoodleGlueCleanupBlock)(NoodleGlue *glue);
 - (void)invoke:(id)object;
 
 @end
+
+/*
+ NSObject category which, through the use of NoodleGlue and associative references, allows you to assign a block
+ to be invoked when the object is deallocated.
+ 
+ This code is more proof of concept than anything you'd want to use in production. For one, it's not threadsafe.
+ 
+ For more details, check out the related blog post at http://www.noodlesoft.com/blog/2010/07/05/fun-with-glue/ 
+ */
+@interface NSObject (NoodleCleanupGlue)
+
+// Sets a block to be invoked when the object is deallocated/collected. Will return an identifier that you can
+// use to remove the block later. Note that you need to retain this identifier if you intend to use it later.
+// Also, treat the identifier as an opaque object. Its actual type/formatting/structure may change in future
+// versions.
+- (id)addCleanupBlock:(void (^)(id object))block;
+
+// Removes the cleanup block using the identifier returned from a previous call to -addCleanupBlock:
+- (void)removeCleanupBlock:(id)identifier;
+
+@end
+
 
 #endif

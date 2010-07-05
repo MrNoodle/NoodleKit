@@ -40,6 +40,8 @@ typedef void	(^NoodleTimerBlock)(NSTimer *timer);
  
  Note that calling -setFireTime: may not work properly on this timer. A new timer should be created if you wish to have
  it fire at a different time after initial creation.
+ 
+ For more details, check out the related blog post at http://www.noodlesoft.com/blog/2010/07/01/playing-with-nstimer/
  */
 + (NSTimer *)scheduledTimerWithAbsoluteFireDate:(NSDate *)fireDate target:(id)target selector:(SEL)aSelector userInfo:(id)userInfo;
 + (NSTimer *)scheduledTimerWithAbsoluteFireDate:(NSDate *)fireDate block:(NoodleTimerBlock)block;
