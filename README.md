@@ -27,6 +27,10 @@ Allows you to create timers that treat the fire date as absolute. Normally, NSTi
 Little class that allows you to plug a block into some code that requires a target/selector. Check the NSTimer category too see how it can be used.
 <http://www.noodlesoft.com/blog/2010/07/01/playing-with-nstimer/>
 
+#### NSObject-NoodleCleanupGlue
+A category on NSObject that allows you to add a block that will be executed when the object is deallocated. It is based on NoodleGlue and it is lumped into the same source file with it.
+<http://www.noodlesoft.com/blog/2010/07/05/fun-with-glue/>
+
 #### NSResponder-NoodleModalExtensions  
 NSResponder category providing methods that will dismiss a dialog and return the proper code for whatever button (OK/Cancel) was clicked. Just hook your dialog buttons up to these methods in IB and you're set. Alleviates having to write that glue code every time.  
 <http://www.noodlesoft.com/blog/2008/03/10/modal-glue/>
