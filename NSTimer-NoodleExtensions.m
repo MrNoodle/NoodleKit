@@ -96,21 +96,32 @@ static char observerKey;
 		
 		[[NSNotificationCenter defaultCenter] addObserver:observer selector:@selector(invoke:) name:NSSystemTimeZoneDidChangeNotification object:nil];
 		[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:observer selector:@selector(invoke:) name:NSWorkspaceDidWakeNotification object:nil];
-		
-
 	}
 	return self;
 }
 
 - (id)initWithAbsoluteFireDate:(NSDate *)date block:(NoodleTimerBlock)block
 {
-	return [self initWithAbsoluteFireDate:date target:[NoodleGlue glueWithBlock:(NoodleGlueBlock)block] selector:@selector(invoke:) userInfo:nil];
+    NoodleGlue      *glue;
+    
+    glue = [NoodleGlue glueWithBlock:
+            ^(NoodleGlue *blockGlue, id object)
+            {
+                block(object);
+            }];
+	return [self initWithAbsoluteFireDate:date target:glue selector:@selector(invoke:) userInfo:nil];
 }
-
 
 - (id)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(NoodleTimerBlock)block
 {	
-	return [self initWithFireDate:date interval:seconds target:[NoodleGlue glueWithBlock:(NoodleGlueBlock)block] selector:@selector(invoke:) userInfo:nil repeats:repeats];
+    NoodleGlue      *glue;
+    
+    glue = [NoodleGlue glueWithBlock:
+            ^(NoodleGlue *blockGlue, id object)
+            {
+                block(object);
+            }];
+	return [self initWithFireDate:date interval:seconds target:glue selector:@selector(invoke:) userInfo:nil repeats:repeats];
 }
 
 
