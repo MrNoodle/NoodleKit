@@ -49,19 +49,42 @@ static char observerKey;
 
 + (NSTimer *)scheduledTimerWithAbsoluteFireDate:(NSDate *)fireDate block:(NoodleTimerBlock)block
 {
-	return [self scheduledTimerWithAbsoluteFireDate:fireDate target:[NoodleGlue glueWithBlock:(NoodleGlueBlock)block] selector:@selector(invoke:) userInfo:nil];
+	NoodleGlue		*glue;
+	
+	glue = [NoodleGlue glueWithBlock:
+			^(NoodleGlue *blockGlue, id object)
+			{
+				block(object);
+			}];
+	
+	return [self scheduledTimerWithAbsoluteFireDate:fireDate target:glue selector:@selector(invoke:) userInfo:nil];
 }
 
 
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(NoodleTimerBlock)block
 {	
-	return [self scheduledTimerWithTimeInterval:seconds target:[NoodleGlue glueWithBlock:(NoodleGlueBlock)block] selector:@selector(invoke:) userInfo:nil repeats:repeats];
+	NoodleGlue		*glue;
+	
+	glue = [NoodleGlue glueWithBlock:
+			^(NoodleGlue *blockGlue, id object)
+			{
+				block(object);
+			}];
+	
+	return [self scheduledTimerWithTimeInterval:seconds target:glue selector:@selector(invoke:) userInfo:nil repeats:repeats];
 }
 
 + (NSTimer *)timerWithTimeInterval:(NSTimeInterval)seconds repeats:(BOOL)repeats block:(NoodleTimerBlock)block
 {
+	NoodleGlue		*glue;
 	
-	return [self timerWithTimeInterval:seconds target:[NoodleGlue glueWithBlock:(NoodleGlueBlock)block] selector:@selector(invoke:) userInfo:nil repeats:repeats];
+	glue = [NoodleGlue glueWithBlock:
+			^(NoodleGlue *blockGlue, id object)
+			{
+				block(object);
+			}];
+	
+	return [self timerWithTimeInterval:seconds target:glue selector:@selector(invoke:) userInfo:nil repeats:repeats];
 }
 
 - (id)initWithAbsoluteFireDate:(NSDate *)date target:(id)target selector:(SEL)aSelector userInfo:(id)userInfo
