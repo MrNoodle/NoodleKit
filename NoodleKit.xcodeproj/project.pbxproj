@@ -73,6 +73,17 @@
 		327CD86A11DD237000A88EA5 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		B40F77FC135527AE00FCC42A /* NoodleCustomImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = B40F77FA135527AE00FCC42A /* NoodleCustomImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40F77FD135527AE00FCC42A /* NoodleCustomImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = B40F77FB135527AE00FCC42A /* NoodleCustomImageRep.m */; };
+		B40F780F13552B0B00FCC42A /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		B40F782A13552B7100FCC42A /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */; };
+		B40F784C13562C4D00FCC42A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B40F784A13562C4D00FCC42A /* MainMenu.xib */; };
+		B40F785113562CA500FCC42A /* test.tiff in Resources */ = {isa = PBXBuildFile; fileRef = B40F785013562CA500FCC42A /* test.tiff */; };
+		B40F785513562CED00FCC42A /* ImageLabAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B40F785413562CED00FCC42A /* ImageLabAppDelegate.m */; };
+		B40F786113562D8C00FCC42A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40F786013562D8C00FCC42A /* QuartzCore.framework */; };
+		B40F786A13562DCF00FCC42A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B40F786913562DCF00FCC42A /* main.m */; };
+		B40F788113562E5000FCC42A /* TimedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B40F788013562E5000FCC42A /* TimedImageView.m */; };
+		B40F78AA1356317F00FCC42A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B40F78A91356317F00FCC42A /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +123,13 @@
 			remoteInfo = NoodleKit;
 		};
 		327CD79111DCF8D500A88EA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = NoodleKit;
+		};
+		B40F781413552B1B00FCC42A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -183,6 +201,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				327CD86A11DD237000A88EA5 /* NoodleKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40F784813552B8700FCC42A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B40F780F13552B0B00FCC42A /* NoodleKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +293,19 @@
 		32DBCF5E0370ADEE00C91783 /* NoodleKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleKit_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* NoodleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoodleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40F77FA135527AE00FCC42A /* NoodleCustomImageRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleCustomImageRep.h; sourceTree = "<group>"; };
+		B40F77FB135527AE00FCC42A /* NoodleCustomImageRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleCustomImageRep.m; sourceTree = "<group>"; };
+		B40F780913552AF900FCC42A /* ImageLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40F780B13552AF900FCC42A /* ImageLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageLab-Info.plist"; sourceTree = "<group>"; };
+		B40F784B13562C4D00FCC42A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B40F785013562CA500FCC42A /* test.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = test.tiff; sourceTree = "<group>"; };
+		B40F785313562CED00FCC42A /* ImageLabAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLabAppDelegate.h; sourceTree = "<group>"; };
+		B40F785413562CED00FCC42A /* ImageLabAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLabAppDelegate.m; sourceTree = "<group>"; };
+		B40F786013562D8C00FCC42A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B40F786913562DCF00FCC42A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B40F787F13562E5000FCC42A /* TimedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimedImageView.h; sourceTree = "<group>"; };
+		B40F788013562E5000FCC42A /* TimedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimedImageView.m; sourceTree = "<group>"; };
+		B40F78A91356317F00FCC42A /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -328,6 +370,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B40F780713552AF900FCC42A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40F782A13552B7100FCC42A /* NoodleKit.framework in Frameworks */,
+				B40F786113562D8C00FCC42A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -341,6 +392,7 @@
 				322DEBA61072593A00CB7080 /* Window Effects.app */,
 				3251D22F108F800C007E281D /* iToonz.app */,
 				327CD76911DCF2EE00A88EA5 /* TimerLab.app */,
+				B40F780913552AF900FCC42A /* ImageLab.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +406,7 @@
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				3278307F1071513F0041F09C /* Examples */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				B40F786013562D8C00FCC42A /* QuartzCore.framework */,
 			);
 			name = NoodleKit;
 			sourceTree = "<group>";
@@ -391,6 +444,8 @@
 				327CD73611DCF15200A88EA5 /* NoodleGlue.m */,
 				32782FDC10713DA00041F09C /* NSImage-NoodleExtensions.h */,
 				32782FDD10713DA00041F09C /* NSImage-NoodleExtensions.m */,
+				B40F77FA135527AE00FCC42A /* NoodleCustomImageRep.h */,
+				B40F77FB135527AE00FCC42A /* NoodleCustomImageRep.m */,
 				32783038107140600041F09C /* NSWindow-NoodleEffects.h */,
 				32783039107140600041F09C /* NSWindow-NoodleEffects.m */,
 				32782FB410713B640041F09C /* NoodleLineNumberMarker.h */,
@@ -453,6 +508,7 @@
 		3278307F1071513F0041F09C /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				B40F780013552AD300FCC42A /* ImageLab */,
 				327CD77811DCF74C00A88EA5 /* TimerLab */,
 				3251D23E108F8063007E281D /* iToonz */,
 				327831A110715FC90041F09C /* LineNumberView */,
@@ -525,6 +581,22 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		B40F780013552AD300FCC42A /* ImageLab */ = {
+			isa = PBXGroup;
+			children = (
+				B40F78A91356317F00FCC42A /* Credits.rtf */,
+				B40F786913562DCF00FCC42A /* main.m */,
+				B40F785013562CA500FCC42A /* test.tiff */,
+				B40F784A13562C4D00FCC42A /* MainMenu.xib */,
+				B40F785313562CED00FCC42A /* ImageLabAppDelegate.h */,
+				B40F785413562CED00FCC42A /* ImageLabAppDelegate.m */,
+				B40F787F13562E5000FCC42A /* TimedImageView.h */,
+				B40F788013562E5000FCC42A /* TimedImageView.m */,
+				B40F780B13552AF900FCC42A /* ImageLab-Info.plist */,
+			);
+			path = ImageLab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -544,6 +616,7 @@
 				3251D225108F7FB9007E281D /* NoodleTableView.h in Headers */,
 				3251D48D1090FFB0007E281D /* NSTableView-NoodleExtensions.h in Headers */,
 				326A35061092486800AF02F8 /* NoodleIPhoneTableView.h in Headers */,
+				B40F77FC135527AE00FCC42A /* NoodleCustomImageRep.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +756,25 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* NoodleKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B40F780813552AF900FCC42A /* ImageLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40F780E13552AFA00FCC42A /* Build configuration list for PBXNativeTarget "ImageLab" */;
+			buildPhases = (
+				B40F780513552AF900FCC42A /* Resources */,
+				B40F780613552AF900FCC42A /* Sources */,
+				B40F780713552AF900FCC42A /* Frameworks */,
+				B40F784813552B8700FCC42A /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B40F781513552B1B00FCC42A /* PBXTargetDependency */,
+			);
+			name = ImageLab;
+			productName = ImageLab;
+			productReference = B40F780913552AF900FCC42A /* ImageLab.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -710,6 +802,7 @@
 				322DEBA51072593A00CB7080 /* Window Effects */,
 				3251D22E108F800C007E281D /* iToonz */,
 				327CD76811DCF2EE00A88EA5 /* TimerLab */,
+				B40F780813552AF900FCC42A /* ImageLab */,
 			);
 		};
 /* End PBXProject section */
@@ -773,6 +866,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40F780513552AF900FCC42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40F784C13562C4D00FCC42A /* MainMenu.xib in Resources */,
+				B40F785113562CA500FCC42A /* test.tiff in Resources */,
+				B40F78AA1356317F00FCC42A /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +953,17 @@
 				3251D226108F7FB9007E281D /* NoodleTableView.m in Sources */,
 				3251D48E1090FFB0007E281D /* NSTableView-NoodleExtensions.m in Sources */,
 				326A35051092486400AF02F8 /* NoodleIPhoneTableView.m in Sources */,
+				B40F77FD135527AE00FCC42A /* NoodleCustomImageRep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40F780613552AF900FCC42A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40F785513562CED00FCC42A /* ImageLabAppDelegate.m in Sources */,
+				B40F786A13562DCF00FCC42A /* main.m in Sources */,
+				B40F788113562E5000FCC42A /* TimedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,6 +999,11 @@
 			isa = PBXTargetDependency;
 			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
 			targetProxy = 327CD79111DCF8D500A88EA5 /* PBXContainerItemProxy */;
+		};
+		B40F781513552B1B00FCC42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* NoodleKit */;
+			targetProxy = B40F781413552B1B00FCC42A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -944,6 +1063,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				327CD78611DCF82100A88EA5 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B40F784A13562C4D00FCC42A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B40F784B13562C4D00FCC42A /* English */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1327,6 +1454,54 @@
 			};
 			name = Release;
 		};
+		B40F780C13552AF900FCC42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/ImageLab/ImageLab-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ImageLab;
+			};
+			name = Debug;
+		};
+		B40F780D13552AF900FCC42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Examples/ImageLab/ImageLab-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ImageLab;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1398,6 +1573,15 @@
 			buildConfigurations = (
 				327CD76C11DCF2EF00A88EA5 /* Debug */,
 				327CD76D11DCF2EF00A88EA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40F780E13552AFA00FCC42A /* Build configuration list for PBXNativeTarget "ImageLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40F780C13552AF900FCC42A /* Debug */,
+				B40F780D13552AF900FCC42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

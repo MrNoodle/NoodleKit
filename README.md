@@ -39,6 +39,10 @@ NSResponder category providing methods that will dismiss a dialog and return the
 NSImage category providing methods to draw NSImages with correct orientation and scaling regardless of the flipped status of the image or the context being drawn into.  
 <http://www.noodlesoft.com/blog/2009/02/02/understanding-flipped-coordinate-systems/>
 
+#### NoodleCustomImageRep
+NSImageRep subclass that allows you to specify the drawing via a block. Handy for drawing images without having to create a new subclass of NSImageRep.
+<http://www.noodlesoft.com/blog/2011/04/15/the-proper-care-and-feeding-of-nsimage>
+
 #### NSWindow-NoodleEffects  
 Provides a basic zoom effect for NSWindow.  
 <http://www.noodlesoft.com/blog/2007/06/30/animation-in-the-time-of-tiger-part-1/>  
