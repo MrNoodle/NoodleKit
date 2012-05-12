@@ -3,7 +3,7 @@
 //  NoodleKit
 //
 //  Created by Paul Kim on 9/28/08.
-//  Copyright (c) 2008 Noodlesoft, LLC. All rights reserved.
+//  Copyright (c) 2008-2012 Noodlesoft, LLC. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -41,27 +41,25 @@
 {
     // Array of character indices for the beginning of each line
     NSMutableArray      *_lineIndices;
+    // When text is edited, this is the start of the editing region. All line calculations after this point are invalid
+    // and need to be recalculated.
+    NSUInteger          _invalidCharacterIndex;
+    
 	// Maps line numbers to markers
 	NSMutableDictionary	*_linesToMarkers;
+    
 	NSFont              *_font;
 	NSColor				*_textColor;
 	NSColor				*_alternateTextColor;
 	NSColor				*_backgroundColor;
 }
 
+@property (readwrite, retain) NSFont    *font;
+@property (readwrite, retain) NSColor   *textColor;
+@property (readwrite, retain) NSColor   *alternateTextColor;
+@property (readwrite, retain) NSColor   *backgroundColor;
+
 - (id)initWithScrollView:(NSScrollView *)aScrollView;
-
-- (void)setFont:(NSFont *)aFont;
-- (NSFont *)font;
-
-- (void)setTextColor:(NSColor *)color;
-- (NSColor *)textColor;
-
-- (void)setAlternateTextColor:(NSColor *)color;
-- (NSColor *)alternateTextColor;
-
-- (void)setBackgroundColor:(NSColor *)color;
-- (NSColor *)backgroundColor;
 
 - (NSUInteger)lineNumberForLocation:(CGFloat)location;
 - (NoodleLineNumberMarker *)markerAtLine:(NSUInteger)line;

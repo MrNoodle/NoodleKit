@@ -37,7 +37,7 @@ void NoodleClearRect(NSRect rect)
 	NSRectFill(rect);
 }
 
-@interface NSTableView ()
+@interface NSTableView (NoodlePrivate)
 
 #pragma mark Sticky Row Header methods
 

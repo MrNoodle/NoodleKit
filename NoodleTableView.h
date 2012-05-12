@@ -63,7 +63,7 @@
 	BOOL		_isDrawingStickyRow;
 }
 
-@property (getter=showsStickyRowHeader, setter=setShowsStickyRowHeader) BOOL showsStickyRowHeader;
+@property (getter=showsStickyRowHeader, setter=setShowsStickyRowHeader:) BOOL showsStickyRowHeader;
 
 #pragma mark Row Spanning methods
 
