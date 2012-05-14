@@ -68,7 +68,7 @@ Certain columns can be made to allow their cells to span across multiple rows. T
 License
 -------
 
-Copyright (c) 2007-2010 Noodlesoft, LLC. All Rights Reserved.
+Copyright (c) 2007-2012 Noodlesoft, LLC. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

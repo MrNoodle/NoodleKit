@@ -3,7 +3,7 @@
 //  ImageLab
 //
 //  Created by Paul Kim on 3/20/11.
-//  Copyright 2011 Noodlesoft, LLC. All rights reserved.
+//  Copyright 2011-2012 Noodlesoft, LLC. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -221,6 +221,7 @@
 	
 	tag = [sender selectedTag];
 	
+    image = nil;
 	switch (tag)
 	{
 		case 0:

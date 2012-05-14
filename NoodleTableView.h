@@ -3,7 +3,7 @@
 //  NoodleRowSpanningTableViewTest
 //
 //  Created by Paul Kim on 10/20/09.
-//  Copyright 2009 Noodlesoft, LLC. All rights reserved.
+//  Copyright 2009-2012 Noodlesoft, LLC. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -63,7 +63,7 @@
 	BOOL		_isDrawingStickyRow;
 }
 
-@property (getter=showsStickyRowHeader, setter=setShowsStickyRowHeader:) BOOL showsStickyRowHeader;
+@property (readwrite, assign) BOOL showsStickyRowHeader;
 
 #pragma mark Row Spanning methods
 

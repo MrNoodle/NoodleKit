@@ -3,7 +3,7 @@
 //  NoodleKit
 //
 //  Created by Paul Kim on 12/30/07.
-//  Copyright 2007 Noodlesoft, LLC. All rights reserved.
+//  Copyright 2007-2012 Noodlesoft, LLC. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -37,11 +37,11 @@ CG_EXTERN CFTimeInterval CGEventSourceSecondsSinceLastEventType( CGEventSourceSt
 {
 	CFTimeInterval	idleTime;
 	NSTimeInterval	timeSinceInitialCall;	
-	
+
+    timeSinceInitialCall = [NSDate timeIntervalSinceReferenceDate] - startTime;
+    
 	if (maxTime > 0)
 	{
-		timeSinceInitialCall = [NSDate timeIntervalSinceReferenceDate] - startTime;
-		
 		if (timeSinceInitialCall >= maxTime)
 		{
 			[self performSelector:aSelector withObject:anArgument];

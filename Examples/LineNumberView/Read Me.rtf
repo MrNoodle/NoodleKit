@@ -1,4 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf110
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
 {\colortbl;\red255\green255\blue255;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
@@ -10,11 +10,11 @@
 {\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid601\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}}
 \vieww16040\viewh15820\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf0 Line View Test
 \b0 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 This is a sample project and test harness for NoodleLineNumberView.\
 \
@@ -24,36 +24,36 @@ A discussion of this project can be found at: {\field{\*\fldinst{HYPERLINK "http
 \
 Notes:\
 \
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls1\ilvl0\cf0 {\listtext	\'95	}The view will expand it's width to accommodate the widths of the labels as needed.\
 {\listtext	\'95	}The included subclass (MarkerLineNumberView) shows how to deal with markers. It also shows how to use an NSCustomImageRep to do the drawing. This allows you to reset the size of the image and have the drawing adjust as needed (this happens if the line number view changes width because the line numbers gained  or lost a digit). If you decide to implement most of this stuff in an external class (not a subclass), you can set the line number view to post frame changed notifications and listen for them.\
 {\listtext	\'95	}Note that markers are tied to numerical lines, not semantic ones. So, if you have a marker at line 50 and insert a new line at line 49, the marker will not shift to line 51 to point at the same line of text but will stay at line 50 pointing at whatever text is there now. Contrast with XCode where the markers move with insertions and deletions of lines (at least as best as it can). This is logic that you'll have to supply yourself.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 To integrate NoodleLineNumberView, just create one and set it as the vertical ruler of the scrollview. Depending on the order of operations, you may need to set the client view of the NoodleLineNumberView to the NSTextView manually.\
 \
 This project actually uses a subclass of NoodleLineNumberView called MarkerLineNumberView. This class shows how one can integrate adding markers. Just click in the line number view to toggle a marker. It's more of an example than a reusable class since your markers may look different and you may have a different UI for adding them. Nonetheless, it shows the basics of how to do it.\
 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \b \cf0 Possible Performance Improvements\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \b0 \cf0 \
 For performance, NoodleLineView keeps an array of the character indices for the start of each line. This gets recalculated whenever the text changes but at least it's cached for redisplays (such as scrolling around). It also only redraw the labels for the lines that are showing.\
 \
 It seems peppy enough for me, testing on a Powerbook 12" (G4) on Leopard. If you feel the need to optimize it further (I advise you Shark it first instead of making assumptions, though), here are some areas that could be improved:\
 \
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
-\ls2\ilvl0\cf0 {\listtext	\'95	}Right now, the character indices are recalculated every time the text changes. I only listen for a 
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}\strike \strikec0 Right now, the character indices are recalculated every time the text changes. I only listen for a 
 \f1 NSTextDidChangeNotification
-\f0  which is pretty coarse as there's no notion of what changed. You need to hook in deeper to get finer grained details of what characters were affected and see if the line indices need to be recalculated at all (check for whether a line ending was added or removed) or what particular lines should be recalculated (if a line was changed, only recalculate the lines after it).\
+\f0  which is pretty coarse as there's no notion of what changed. You need to hook in deeper to get finer grained details of what characters were affected and see if the line indices need to be recalculated at all (check for whether a line ending was added or removed) or what particular lines should be recalculated (if a line was changed, only recalculate the lines after it).\strike0\striked0   (4/12/2012) This is now implemented. Checks the edited range and only recalculates the lines from that point onwards.\
 {\listtext	\'95	}The layout coordinates of each line can also be cached. If you tie into NSLayoutManager's delegate methods, you can find out when the layout has been invalidated. This would be helpful for cases where the view is scrolled or otherwise redisplayed without having the layout changed. Invalidations would happen in cases like when the view is resized in which case, you recalculate and recache. I have my doubts about whether this will save much but Shark it and find out.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 The first two were not done because I wanted this subclass to be self-contained and not interfere with any delegates that may already be in place.\
 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \b \cf0 Contact
 \b0 \
@@ -68,7 +68,7 @@ Just go {\field{\*\fldinst{HYPERLINK "http://www.noodlesoft.com/about.php"}}{\fl
 I am releasing this under the MIT license.\
 \
 ____________________________________\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f1 \cf0 Copyright (c) 2008-2009 Noodlesoft, LLC. All Rights Reserved.\
 \
@@ -92,39 +92,39 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\
 OTHER DEALINGS IN THE SOFTWARE.\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls3\ilvl0
 \f0\b \cf0 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 Changelog
 \b0 \
 \
 0.4.1:\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls4\ilvl0\cf0 {\listtext	\'95	}Fixed display glitch when scrolling after the line number view resizes when linked against/running on 10.4. Apparently, NSRulerView's 
 \f1 setRuleThickness:
 \f0  does not like non-integral values.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 0.4:\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls5\ilvl0\cf0 {\listtext	\'95	}Changed default font to use label font. Not sure if semantically, that's what XCode uses but it matches for the time being.\
 {\listtext	\'95	}Fixed display bugs introduced in 0.3 when line number view resizes itself.\
 {\listtext	\'95	}Added methods for setting various colors. The alternate text color is the color used by the line number label when a marker is drawn under it.\
 {\listtext	\'95	}Miscellaneous tweaks.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 0.3:\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls6\ilvl0\cf0 {\listtext	\'95	}Now listens for NSTextStorage's NSTextStorageDidProcessEditingNotification instead of NSTextDidChangeNotification. The former includes programmatic changes to the text.\
 {\listtext	\'95	}Was not taking text storage's inset into account when lining up labels. OSAScriptView, for one, had a non-zero inset. Should be fixed now.\
 {\listtext	\'95	}Calculates lines lazily allowing multiple programmatic text changes to be batched up.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 0.2:\
-\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\ql\qnatural\pardirnatural
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural
 \ls7\ilvl0\cf0 {\listtext	\'95	}Initial public release\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 \cf0 \
 }
